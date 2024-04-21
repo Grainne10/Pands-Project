@@ -31,3 +31,15 @@ print(type(plen))
 plen.to_numpy()
 # The data set is clean, has no missing values and is ready for analysis.
 
+import matplotlib.pyplot as plt
+# Extract data
+data = df.iloc[:, :-1]  # Selecting all rows and all columns except the last one
+feature_names = df.columns[:-1]  # Extracting feature names from DataFrame columns
+
+plt.figure(figsize=(8, 6))
+plt.boxplot(data, labels=feature_names)
+plt.xlabel('Features')
+plt.ylabel('Feature Values')
+plt.title('Box Plot of Iris Dataset Features')
+plt.grid(True)
+plt.show()
