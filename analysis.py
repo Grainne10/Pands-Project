@@ -35,9 +35,26 @@ plen.to_numpy()
 # If we want to see the number of each Species column, we can use this:
 df["species"].value_counts() 
 
+# Output a summary of the each variables to a single text file.
+
+with open(r"iris_summary.txt", "w") as f:
+
+    describe = str(df.describe())
+    info = str(df.info()) 
+    null = str(df.isnull().sum)
+    summary =  info + "\n\n" + describe + "\n\n" + null
+
+    # Write the summary to the file
+    f.write(summary)
+ 
+
+
+
 # The data set is clean, has no missing values and is ready for analysis.
 
-# We will look at how some of these ndividual variables look different charts and plots.
+
+
+# We will look at how some of these individual variables look different charts and plots.
 # In order to do this, we must import matplotlib, it is a library for data visualization.
 import matplotlib.pyplot as plt
 
