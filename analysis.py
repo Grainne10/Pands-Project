@@ -37,16 +37,28 @@ df["species"].value_counts()
 
 # Output a summary of the each variables to a single text file.
 
+from io import StringIO
+
+# Capture the output of df.info() into a string - for this String IO section, I could not find why the info section would not print to the file
+# So I looked it up on chat GPT and it suggested using this. I did further research and added it to the readme file. 
+# Without this it was printing to code rather than returning a value to the file. 
+#StringIO allows you to treat strings like file-like objects and captures the output of df info as a string
+buffer = StringIO()
+df.info(buf=buffer)
+info_output = buffer.getvalue()
+buffer.close()
+
+# This section I created myself .
+
 with open(r"iris_summary.txt", "w") as f:
 
     describe = str(df.describe())
     info = str(df.info()) 
     null = str(df.isnull().sum)
-    summary =  info + "\n\n" + describe + "\n\n" + null
+    summary =  info_output + "\n\n" + describe + "\n\n" + null
 
     # Write the summary to the file
     f.write(summary)
- 
 
 
 
