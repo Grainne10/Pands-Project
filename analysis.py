@@ -22,6 +22,12 @@ print(df.isnull())
 # This will show you the type of data that you are analysing. It determines Sepal length, Sepal Width,  Petal Length and Petal Width as the numbers are fractitional it detects they are floating numbers.  
 # Species are shown as objects. Typically, objects means that the values in the columns are strings or a mixture of data types. 
 print(df.dtypes)
+
+# To remove duplicates from the file as they sometimes skewer the results
+
+df = df.drop_duplicates(subset ="species",) 
+
+
 # To show the petal length, it will show the first and last five
 plen = df['petal_length']
 # Show
@@ -42,7 +48,7 @@ from io import StringIO
 # Capture the output of df.info() into a string - for this String IO section, I could not find why the info section would not print to the file
 # So I looked it up on chat GPT and it suggested using this. I did further research and added it to the readme file. 
 # Without this it was printing to code rather than returning a value to the file. 
-#StringIO allows you to treat strings like file-like objects and captures the output of df info as a string
+#StringIO allows you to treat strings like file-like objects and captures the output of your dataframe info as a string
 buffer = StringIO()
 df.info(buf=buffer)
 info_output = buffer.getvalue()
