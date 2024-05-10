@@ -44,6 +44,7 @@ Analysis
 * [Using Numpy](https://numpy.org/doc/stable/user/absolute_beginners.html)
 * [Expoloring the dataset](https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/)
 * [Colour Selection](https://matplotlib.org/mpl_examples/color/named_colors.hires.png)
+* [Colour Heatmap](https://python-graph-gallery.com/92-control-color-in-seaborn-heatmaps/) - selecting colours for the heatmap in python
 
 
 

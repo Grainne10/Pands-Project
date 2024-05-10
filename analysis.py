@@ -102,11 +102,20 @@ plt.savefig('Scatter plot of Sepal Length vs Sepal Width ', bbox_inches='tight')
 plt.show()# Show a boxplot of the four variables
 
 sns.scatterplot(df, x="petal_length", y="petal_width", hue="species", style="species", markers={"setosa": "^", "versicolor": "s", "virginica": "o"})
+plt.title("Scatter Plot of Peta Length vs. Petal Width")
 plt.xlabel("Petal Length (Cm) ")
 plt.ylabel("Petal Width (Cm) ")
 plt.legend(loc='upper right', bbox_to_anchor=(1.30, 1)) 
-plt.savefig('Scatter plot of Sepal Length vs Sepal Width ', bbox_inches='tight')
+plt.savefig('Scatter plot of Petal Length vs Petal Width ', bbox_inches='tight')
 plt.show()
+
+# Show the variable in a pairplot using seaborn. This shows the scatter plots and kernal density plots for all variables
+sns.pairplot(df, hue="species", markers=["o", "s", "^"])
+plt.suptitle("Pairplot of Iris Dataset", y=1.02)
+plt.savefig('Pairplot of Iris Dataset', bbox_inches='tight')
+plt.show()
+
+
 
 # From the scatterplot, 
 # We can show the scatterplots separately using facet grids:
@@ -179,6 +188,24 @@ plt.legend
 plt.xlabel('Petal Width')
 plt.ylabel('Count')
 plt.savefig('Histogram Petal Width')
+plt.show()
+
+# To show correlation coefficient for numeric values we can use do a matrix. Select only numeric columns for correlation calculation
+numeric_df = df.select_dtypes(include=['float64', 'int64'])
+
+# Calculate correlation matrix
+correlation_matrix = numeric_df.corr()
+
+# Print correlation matrix
+print("Correlation Matrix:")
+print(correlation_matrix)
+
+# We can use the correlation matrix to plot a heatmap
+# We can use annot to show the values and fmt for decimal places
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation_matrix, annot=True, cmap='YlGnBu', fmt=".2f", linewidths=0.5) 
+plt.title('Correlation Heatmap of Iris Dataset Variables')
+plt.savefig('Iris DataSet HeatMap')
 plt.show()
 
 
