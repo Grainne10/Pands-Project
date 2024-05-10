@@ -23,10 +23,6 @@ print(df.isnull())
 # Species are shown as objects. Typically, objects means that the values in the columns are strings or a mixture of data types. 
 print(df.dtypes)
 
-# To remove duplicates from the file as they sometimes skewer the results
-
-df = df.drop_duplicates(subset ="species",) 
-
 
 # To show the petal length, it will show the first and last five
 plen = df['petal_length']
@@ -91,7 +87,51 @@ import numpy as np
 import seaborn as sns
 # We can pull in the colour palette from seaborn and set our colours to distinguish the different iris species.
 
-# Show a boxplot of the four variables
+#To ignore warnings, re: the figure layout changes, we import the warnings module
+import warnings
+warnings.filterwarnings('ignore')
+
+
+# Draw a scatterplot of the sepal length vs sepal width and show the plots in different shapes to identify them clearly
+sns.scatterplot(df, x="sepal_length", y="sepal_width", hue="species", style="species", markers={"setosa": "^", "versicolor": "s", "virginica": "o"})
+plt.title("Scatter Plot of Sepal Length vs. Sepal Width")
+plt.xlabel("Sepal Length (Cm) ")
+plt.ylabel("Sepal Width (Cm) ")
+plt.legend(loc='upper right', bbox_to_anchor=(1.30, 1))
+plt.savefig('Scatter plot of Sepal Length vs Sepal Width ', bbox_inches='tight')
+plt.show()# Show a boxplot of the four variables
+
+sns.scatterplot(df, x="petal_length", y="petal_width", hue="species", style="species", markers={"setosa": "^", "versicolor": "s", "virginica": "o"})
+plt.xlabel("Petal Length (Cm) ")
+plt.ylabel("Petal Width (Cm) ")
+plt.legend(loc='upper right', bbox_to_anchor=(1.30, 1)) 
+plt.savefig('Scatter plot of Sepal Length vs Sepal Width ', bbox_inches='tight')
+plt.show()
+
+# From the scatterplot, 
+# We can show the scatterplots separately using facet grids:
+
+g = sns.FacetGrid(df, col="species",  hue="species", height=5, aspect=1.2)
+g.map(sns.scatterplot, "sepal_length", "sepal_width")
+g.set_axis_labels("Sepal Length (cm)", "Sepal Width (cm)")
+g.set_titles("{col_name}")
+
+plt.subplots_adjust(top=0.85) 
+plt.suptitle("Facet Grid Sepal Length  vs. Sepal Width ", fontsize=18)
+plt.savefig('Facet Grid Scatter plot of Sepal Length vs Sepal Width of Iris Species', bbox_inches='tight')
+plt.show()
+
+g = sns.FacetGrid(df, col="species",  hue="species", height=5, aspect=1.2)
+g.map(sns.scatterplot, "petal_length", "petal_width")
+g.set_axis_labels("Petal Length (cm)", "Petal Width (cm)")
+g.set_titles("{col_name}")
+
+plt.subplots_adjust(top=0.85) 
+plt.suptitle("Facet Grid Petal Length  vs. Petal Width ", fontsize=18)
+plt.savefig('Facet Grid Scatter plot of Petal Length vs Petal Width of Iris Species', bbox_inches='tight')
+plt.show()
+
+
 
 plt.figure(figsize=(10, 8))
 sns.boxplot(data=df, orient="v", palette="Set2")
