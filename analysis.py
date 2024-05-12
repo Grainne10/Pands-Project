@@ -209,6 +209,22 @@ plt.savefig('Iris DataSet HeatMap')
 plt.show()
 
 
+# Prepare a violin plot for each variable in the Iris Data Set
+ 
+fig, axes = plt.subplots(2, 2, figsize=(18, 10))
+ 
+fig.suptitle('Iris Data Set Violin Plots')
+ 
+ 
+sns.violinplot(df, x='species', y='sepal_length', ax=axes[0, 0] )
+sns.violinplot(df, x='species', y='sepal_width', ax=axes[0, 1] )
+sns.violinplot(df, x='species', y='petal_length', ax=axes[1, 0] )
+sns.violinplot(df, x='species', y='petal_width', ax=axes[1, 1])
+plt.savefig('Iris DataSet Violin Plots')
+plt.show()
+
+
+
 # Extract data
 #data = df.iloc[:, :-1]  # Selecting all rows and all columns except the last one
 #feature_names = df.columns[:-1]  # Extracting feature names from DataFrame columns
