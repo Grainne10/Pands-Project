@@ -224,6 +224,14 @@ plt.savefig('Iris DataSet Violin Plots')
 plt.show()
 
 
+# Andrew's curves is an example of multivariate analysis:
+
+plt.figure(figsize=(10, 8))
+pd.plotting.andrews_curves(df, 'species', colormap='plasma')
+plt.title('Iris Dataset Andrews Curves')
+plt.legend(loc='upper right')
+plt.savefig('Iris DataSet Andrews Curves')
+plt.show()
 
 # Extract data
 #data = df.iloc[:, :-1]  # Selecting all rows and all columns except the last one

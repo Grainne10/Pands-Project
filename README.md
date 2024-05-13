@@ -63,6 +63,7 @@ Analysis
 *[Violin Plots](https://www.geeksforgeeks.org/violin-plot-for-data-analysis/) - Has been described as a hybrid of a box plot and kernal density plot. It can depict summary statistic and density of each variable.
 * [Multiplots](https://www.geeksforgeeks.org/multi-plot-grid-in-seaborn/) - how to do a multiplot for the violinplot
 * [Real Python](What Does if __name__ == "__main__" Do in Python? – Real Python) - execute code when  file is run from a script, but not when imported as a module.
+[Pandas Plot multivariate](https://pandas.pydata.org/docs/user_guide/visualization.html#andrews-curves) - example of multivariate plot.
 
 *[Geeks for Geeks](https://www.geeksforgeeks.org/how-to-automatically-install-required-packages-from-a-python-script/) - showing what requirements are needed to run a script.
 * [Lag Plots](https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Lag_Plots.pdf) - Check to see if suitable for Iris dataset
