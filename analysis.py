@@ -75,6 +75,28 @@ with open(r"iris_summary.txt", "w") as f:
  
 import matplotlib.pyplot as plt
 
+# To save a table into a png file so it can be copied into the Readme file.
+
+from pandas.plotting import table
+
+df = pd.DataFrame()
+df['sepal_length'] = ['150.000000', '5.843333', '0.828066', '4.300000', '5.100000', '5.800000', '6.400000', '7.900000']
+df['sepal_width'] = ['150.000000', '3.057333', '0.435866', '2.000000', '2.800000', '3.000000', '3.300000', '4.400000']
+df['petal_length'] = ['150.000000', '3.758000', '1.765298', '1.000000', '1.600000', '4.350000', '5.100000', '6.900000']
+df['petal_width'] = ['150.000000', '1.199333', '0.762238', '0.100000', '0.300000', '1.300000', '1.800000', '2.500000']
+
+index = ['count', 'mean', 'std', 'min', '25%', '50%', '75%', 'max']
+df.index = index
+
+plt.figure(figsize=(7, 2))
+ax = plt.subplot(111, frame_on=True)  
+ax.xaxis.set_visible(False)  # hide the x axis
+ax.yaxis.set_visible(False)  # hide the y axis
+table(ax, df, loc="center")  # where df is your data frame
+
+plt.savefig("describetable.png")
+
+
 
 # We will install Numpy. NumPy is a python library, it can be used to perform advanced mathematical tasks quickly.
 

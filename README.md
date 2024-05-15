@@ -24,21 +24,24 @@ The data set consist of 50 samples from each of three species of Iris, the Iris 
 
 In this first image, you can see a description of the Iris and the types of petals and sepals that were measured. To help to distinguish them, sepals are often green and leaf-like but in the Iris they are colourful. Sepals are modified leaves that form the outer whorl of a flower and are the first part of a flower to form. Their function is to protect the developing flower and keep it from drying out. The petals are upright and colorful, they are the parts of a flower that are often conspicuously colored.
 
-![USDA forestry](https://www.fs.usda.gov/wildflowers/beauty/iris/images/flower/blueflagiris_flower.jpg)
+![USDA forestry](https://www.fs.usda.gov/wildflowers/beauty/iris/images/flower/blueflagiris_flower_lg.jpg)  ![Medium](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YYiQed4kj_EZ2qfg_imDWA.png)
  
-In the following images, we look at the three species in more details:  
+In the following image, we look at the three species in more details:  
 
-![Wikipedia Iris Setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/220px-Kosaciec_szczecinkowaty_Iris_setosa.jpg) ![Wikipedia Iris Virginica]( https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/220px-Iris_virginica.jpg) ![Wikipedia Irior](https://upload.wikimedia.org/wikipedia/commons/ thumb/4/41/Iris_versicolor_3.jpg/220px-Iris_versicolor_3.jpg) s Versicol  
+![Medium](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YYiQed4kj_EZ2qfg_imDWA.png)
 
-Setosa  has 3 pairs of petals, 3 large sepals, known as the 'falls' and 3 inner, much smaller petals known as the 'standards'.   
+![Wikipedia Iris Setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/220px-Kosaciec_szczecinkowaty_Iris_setosa.jpg) ![Wikipedia Iris Virginica]( https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/220px-Iris_virginica.jpg) ![Wikipedia Irior](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/220px-Iris_versicolor_3.jpg) 
+
+Setosa has 3 pairs of petals, 3 large sepals, known as the 'falls' and 3 inner, much smaller petals known as the 'standards'.   
 Virginica has 3 drooping sepals, called "falls",  and 3 upright petals, called "standards".  
-Versicolor has 6 petals and bluntly sepals spread out nearly flat and have two forms.   
+Versicolor has 6 petals and bluntly sepals spread out nearly flat.   
  
 ## Python Script  
-* Read in the Iris Data  CSV from a URL
+* Read in the Iris Data CSV from a URL
 * Import pandas to work on the data set using data frames
 * Create a summary of the data using tables
-* Test the data form missing values
+* Save a summaray of the data to an output file
+* Test the data for missing values
 * Use Numpy for working with arrays
 
 
@@ -78,8 +81,8 @@ Versicolor has 6 petals and bluntly sepals spread out nearly flat and have two f
 *[Violin Plots](https://www.geeksforgeeks.org/violin-plot-for-data-analysis/) - Has been described as a hybrid of a box plot and kernal density plot. It can depict summary statistic and density of each variable.
 * [Multiplots](https://www.geeksforgeeks.org/multi-plot-grid-in-seaborn/) - how to do a multiplot for the violinplot
 * [Real Python](What Does if __name__ == "__main__" Do in Python? – Real Python) - execute code when  file is run from a script, but not when imported as a module.
-[Pandas Plot multivariate](https://pandas.pydata.org/docs/user_guide/visualization.html#andrews-curves) - example of multivariate plot.
-
+* [Pandas Plot multivariate](https://pandas.pydata.org/docs/user_guide/visualization.html#andrews-curves) - example of multivariate plot.
+* [Delftstack](https://www.delftstack.com/howto/python-pandas/pandas-png/) - how to save a table into png
 *[Geeks for Geeks](https://www.geeksforgeeks.org/how-to-automatically-install-required-packages-from-a-python-script/) - showing what requirements are needed to run a script.
 * [Lag Plots](https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Lag_Plots.pdf) - Check to see if suitable for Iris dataset
 *[Exploratory Analysis](https://medium.com/@nirajan.acharya666/exploratory-data-analysis-of-iris-dataset-9c0df76771df) - Analysis of the Iris dataset
