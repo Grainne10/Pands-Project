@@ -2,11 +2,11 @@
 
 **by Grainne Boyle**
 
-I work a [TE Connectivity] (https://www.te.com/usa-en/home.html)
-
+I work a [TE Connectivity] .
+I am a student at the [Atlantic Technological University](https://www.atu.ie/), Galway, studying the Higher Diploma in Science in Data Analytics on a part-time basis over 2 years.  
 This repository contains the files for the project for the Programme and Scripting module in the Higher Diploma in Science in Data Analytics.
 
-Description
+##Description
 This project is based on the [Iris Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set). For the project I must research the data set and write documentation and code in Python to investigate the data set, with a view to explaining it to my colleagues.I may be asked to give a presentation on the data , where I explain what investigating a data set entails and how Python can be used to do it. 
 
 Python Script
@@ -23,9 +23,18 @@ Python Script
 
 
 Background
-This project is based on the [Iris Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set). The Fisher’s Iris data set  is a multivariate data set made famous by the statistician and biologist Ronald Fisher. It is sometimes called Anderson’s Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in the Gaspe peninsula,  "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus"
+This project is based on the [Iris Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set). The Fisher’s Iris data set  is a multivariate data set made famous by the statistician and biologist Ronald Fisher in his 1936 paper 'The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis(find a linear combination of features that characterises or separates two or more classes) . It is sometimes called Anderson’s Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in the Gaspe peninsula,  "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus"
 
-The data set consist of 50 samples from each of three species of Iris ris setosa, Iris virginica and Iris versicolor . Four features were measured from each sample: the length and the width of the  sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. 
+The data set consist of 50 samples from each of three species of Iris, the Iris setosa, Iris virginica and Iris versicolor . Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. 
+In this first image, you can see a description of the Iris and the types of petals and sepals that were measured. To help to distinguish them, sepals are often green and leaf-like but in the Iris they are colourful. Sepals are modified leaves that form the outer whorl of a flower and are the first part of a flower to form. Their function is to protect the developing flower and keep it from drying out. The petals are upright and colorful, they are the parts of a flower that are often conspicuously colored. 
+![US Forest Service]( https://www.fs.usda.gov/wildflowers/beauty/iris/images/flower/blueflagiris_flower.jpg) Image of an Iris flower showing petals and Sepals
+In the following images, we look at the three species in more details
+!Wikipedia Iris Setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/220px-Kosaciec_szczecinkowaty_Iris_setosa.jpg) ![Wikipedia Iris Virginica]( https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/220px-Iris_virginica.jpg) ![Wikipedia Iris Versicolor]( https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/220px-Iris_versicolor_3.jpg) 
+Setosa  has 3 pairs of petals, 3 large sepals, known as the 'falls' and 3 inner, much smaller petals known as the 'standards'.   
+Virginica has 3 drooping sepals, called "falls",  and 3 upright petals, called "standards".  
+Versicolor has 6 petals and bluntly sepals spread out nearly flat and have two forms.   
+ 
+
 
 
 Analysis
