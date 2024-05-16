@@ -19,22 +19,17 @@ print(df.describe())
 # This will show if there are missing data or if the dataset is complete.  "True" shows that the value is missing in that field.
 # There are no missing values.  This is an example of a Boolean.  
 print(df.isnull())
+print(df.isnull().sum())
 # This will show you the type of data that you are analysing. It determines Sepal length, Sepal Width,  Petal Length and Petal Width as the numbers are fractitional it detects they are floating numbers.  
 # Species are shown as objects. Typically, objects means that the values in the columns are strings or a mixture of data types. 
 print(df.dtypes)
 
 
-# To show the petal length, it will show the first and last five
-plen = df['petal_length']
-# Show
-print(plen)
-# type
-print(type(plen))
+# To show the headers, it will show the first and last five
+print(df.head())
 
-# to get the numpy array. 
-plen.to_numpy()
 
-# If we want to see the number of each Species column, we can use this formula.
+# If we want   see the number of each Species column, we can use this formula.
 # We can see we have 3 unique species. All species contains equal amounts or rows.
 df["species"].value_counts() 
 
@@ -75,27 +70,6 @@ with open(r"iris_summary.txt", "w") as f:
  
 import matplotlib.pyplot as plt
 
-# To save a table into a png file so it can be copied into the Readme file.
-
-from pandas.plotting import table
-
-df = pd.DataFrame()
-df['sepal_length'] = ['150.000000', '5.843333', '0.828066', '4.300000', '5.100000', '5.800000', '6.400000', '7.900000']
-df['sepal_width'] = ['150.000000', '3.057333', '0.435866', '2.000000', '2.800000', '3.000000', '3.300000', '4.400000']
-df['petal_length'] = ['150.000000', '3.758000', '1.765298', '1.000000', '1.600000', '4.350000', '5.100000', '6.900000']
-df['petal_width'] = ['150.000000', '1.199333', '0.762238', '0.100000', '0.300000', '1.300000', '1.800000', '2.500000']
-
-index = ['count', 'mean', 'std', 'min', '25%', '50%', '75%', 'max']
-df.index = index
-
-plt.figure(figsize=(7, 2))
-ax = plt.subplot(111, frame_on=True)  
-ax.xaxis.set_visible(False)  # hide the x axis
-ax.yaxis.set_visible(False)  # hide the y axis
-table(ax, df, loc="center")  # where df is your data frame
-
-plt.savefig("describetable.png")
-
 
 
 # We will install Numpy. NumPy is a python library, it can be used to perform advanced mathematical tasks quickly.
@@ -121,7 +95,7 @@ plt.xlabel("Sepal Length (Cm) ")
 plt.ylabel("Sepal Width (Cm) ")
 plt.legend(loc='upper right', bbox_to_anchor=(1.30, 1))
 plt.savefig('Scatter plot of Sepal Length vs Sepal Width ', bbox_inches='tight')
-plt.show()# Show a boxplot of the four variables
+plt.show()
 
 # This is a scatterplot of the petal length vs petal width and I show the plots in different shapes to identify them clearly.
 sns.scatterplot(df, x="petal_length", y="petal_width", hue="species", style="species", markers={"setosa": "^", "versicolor": "s", "virginica": "o"})
@@ -271,4 +245,37 @@ plt.show()
 #data = df.iloc[:, :-1]  # Selecting all rows and all columns except the last one
 #feature_names = df.columns[:-1]  # Extracting feature names from DataFrame columns
 
+# To save a table into a png file so it can be copied into the Readme file.
+
+from pandas.plotting import table
+
+df = pd.DataFrame()
+df['sepal_length'] = ['150.000000', '5.843333', '0.828066', '4.300000', '5.100000', '5.800000', '6.400000', '7.900000']
+df['sepal_width'] = ['150.000000', '3.057333', '0.435866', '2.000000', '2.800000', '3.000000', '3.300000', '4.400000']
+df['petal_length'] = ['150.000000', '3.758000', '1.765298', '1.000000', '1.600000', '4.350000', '5.100000', '6.900000']
+df['petal_width'] = ['150.000000', '1.199333', '0.762238', '0.100000', '0.300000', '1.300000', '1.800000', '2.500000']
+
+index = ['count', 'mean', 'std', 'min', '25%', '50%', '75%', 'max']
+df.index = index
+
+plt.figure(figsize=(7, 2))
+ax = plt.subplot(111, frame_on=True)  
+ax.xaxis.set_visible(False)  # hide the x axis
+ax.yaxis.set_visible(False)  # hide the y axis
+table(ax, df, loc="center")  # where df is your data frame
+
+plt.savefig("describetable.png")
+
+# Add in a missing values table similar to one above
+null_counts = {'sepal_length': 0, 'sepal_width': 0, 'petal_length': 0, 'petal_width': 0, 'species':0}
+df_null_counts = pd.DataFrame(null_counts.items(), columns=['Column', 'Missing Values'])
+
+# Plotting the table and saving it as an image file
+plt.figure(figsize=(4, 3))  # Adjust the figure size as needed
+ax = plt.subplot(111, frame_on=False)
+ax.xaxis.set_visible(False)
+ax.yaxis.set_visible(False)
+
+table(ax, df_null_counts, loc='center')
+plt.savefig("Missing values Table.png")
 
