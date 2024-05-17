@@ -13,13 +13,13 @@ df = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/
 
 #I do some review of the data
 # It gives you a brief overview of the data by columns, count, types
-print(df.info())
+# print(df.info()) - this is shown in output file below
 # Brief description of the count, mean, std dev, min
-print(df.describe())
+# print(df.describe()) - this is shown in output file below
 # This will show if there are missing data or if the dataset is complete.  "True" shows that the value is missing in that field.
 # There are no missing values.  This is an example of a Boolean.  
 print(df.isnull())
-print(df.isnull().sum())
+# print(df.isnull().sum())- this is shown in the output file below.
 # This will show you the type of data that you are analysing. It determines Sepal length, Sepal Width,  Petal Length and Petal Width as the numbers are fractitional it detects they are floating numbers.  
 # Species are shown as objects. Typically, objects means that the values in the columns are strings or a mixture of data types. 
 print(df.dtypes)

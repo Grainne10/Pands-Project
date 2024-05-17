@@ -33,16 +33,31 @@ Setosa has 3 pairs of petals, 3 large sepals, known as the 'falls' and 3 inner, 
 Virginica has 3 drooping sepals, called "falls",  and 3 upright petals, called "standards".  
 Versicolor has 6 petals and bluntly sepals spread out nearly flat.   
  
+
+
+## analysis.py  
+The script is run from the command line by entering python analysis.py  
+It imports a number of libraries to enable analysis of the dataset. 
+It runs a number of commands and codes.  
+It saves a summary of the variables to the same folder as the script.
+It generates a number of tables and graphs that I use to analyse the data set.
 ## Python Script  
-* Read in the Iris Data CSV from a URL
-* Import pandas to work on the data set using data frames
-* Create a summary of the data using tables
-* Save a summaray of the data to an output file
-* Test the data for missing values
-* Use Numpy for working with arrays
-
-
-## Analysis  
+* Read in the Iris Data CSV from a URL.  
+* Imports libraries needed to run script.  
+* Preprocesses the data to ensure it is suitable for analysis by describing the data, checking data types and checking for null values.  
+* Outputs description of the data types, variables and missing values to a file in the same repository "iris-summary.txt".   
+* Reads in modules from a file within the repository "plots.py", these modules are functions to create the graphs and visualisations.  
+* Creates scatterplots of the data and outputs to a png file within the repository.  
+* Creates pairplots of the data and outputs to a png file within the repository.  
+* Creates facet grids of the dataset
+* Creates box plot of the dataset
+* Creates individual histograms for each variable
+* Calculates the correlation matrix 
+* Creates a heatmap from the correlation data
+* Creates violin plots
+* Creates Andrew's curve plot.
+* Saves a table of the describe for import to this Readme
+* Saves a table of the missing values for import to this Readme
 
 ## Conclusion  
 
@@ -82,8 +97,8 @@ Versicolor has 6 petals and bluntly sepals spread out nearly flat.
 * [Delftstack](https://www.delftstack.com/howto/python-pandas/pandas-png/) - how to save a table into png.  
 * [Geeks for Geeks](https://www.geeksforgeeks.org/how-to-automatically-install-required-packages-from-a-python-script/) - showing what requirements are needed to run a script.  
 * [Lag Plots](https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Lag_Plots.pdf) - Check to see if suitable for Iris dataset. 
+* [Real Python](https://realpython.com/python-import/) - Import Modules 
 * ChatGPT - This was used to tidy up and make some improvements on a few of the graphs.
-
 
 
 
