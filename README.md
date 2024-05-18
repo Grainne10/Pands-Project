@@ -85,7 +85,7 @@ The data was tested for missing values and this table shows there are no missing
 
 Box plots show the median, quartile and potential outliers. The plot shows that the distribution varies more significantly on the petal length and petal width. Sepal length and sepal width are shorter in their variation but the sepal length is the longest in length of the four variables. There are outliers mainly on the sepal width.
 
-The histograms are examples of an univariate analysis where we look at the each one of the variables individually.
+The histograms are examples of an **univariate analysis** where we look at the each one of the variables individually.
 
 *Plot 2 - Histogram Sepal Length*
 
@@ -110,11 +110,60 @@ The histogram of the petal length shows less of an overlap between the species. 
 
 ![alt text](<Histogram Petal Width.png>)
 
-The histogram of the petal width shows that setosa is the shortest in cm under 0.5cm, versicolor lies between 1cm and 1.8cm and virginica is between approximately 1.4cm and 2.5cm. Again is it easier to identify the three species by petal length and  petal width rather than the sepal length and sepal width where is is more of an overlap between the three species.
+The histogram of the petal width shows that setosa is the shortest in cm under 0.5cm, versicolor lies between 1cm and 1.8cm and virginica is between approximately 1.4cm and 2.5cm. Again is it easier to identify the three species by petal length and  petal width rather than the sepal length and sepal width where is is more of an overlap between the three species. 
+
+Next we will look at some **Bivariate Analysis** where two variables are compared.
+
+*Plot 6 - Scatterplot of Sepal length vs Sepal Width*
+
+![alt text](<Scatter plot of Sepal Length vs Sepal Width .png>)
+
+Each point on the scatterplot refers to one on the 150 iris flowers , with colour and shape indicating their species type. The setosa has the shortest sepal length and the longest sepal width. Virginica has larger sepal length but smaller sepal width. Versicolor lies in the middle of the two with more overlap with versicolor.
+
+*Plot 7 - Scatterplot of Petal length vs Petal Width*
+
+![alt text](<Scatter plot of Petal Length vs Petal Width .png>)
+
+ Setosa stands out on it's own again in this plot. It has shorter petal lengths and widths. There is less of an overlap between the other two species on the petal length. Virginica has the the largest petal lengths and widths. Versicolor lies in the middle of the two other species.
+
+*Plot 8 - Facet grid of Sepal length vs Sepal Width*
+
+![alt text](<Facet Grid of Sepal Length vs Sepal Width.png>)
+
+The facet grids show individual scatterplots of the three species. I have added a line of best fit and you can see there is a linear regression, generally as the sepal length increases the sepal width also increases.
+
+*Plot 9 - Facet grid  of Petal length vs Petal Width*
+
+![alt text](<Facet Grid Scatter plot of Petal Length vs Petal Width.png>)
+
+This shows clearly the differences and you can easily identify the species by their different petal lengths and widths.
+
+*Plot 10 - HeatMap*
+
+![alt text](<Iris DataSet HeatMap.png>)
+
+The heatmap shows the correlation between the variables, It ranges from −1 to 1. If the value is close to +1 it implies that if the data points are on a line as the x increases, the y also increases. If the value is close to – 1 , it implies a line where y increases while x decreases. Darker colours show a stronger correlation. Petal width and petal length have a very high correlation. Petal length and sepal length have a high correlation. Sepal length and petal width have a high correlation. Sepal width has a negative correlation with all the other variables.
+
+
+*Plot 11 - Violin Plots*
+
+![alt text](<Iris DataSet Violin Plots.png>)
+
+Violin plot is a hybrid of the box plot and kernal density plot. The plot displays a clear separation for petal lengths and widths of the three species, particularly for the Iris Setosa. Whereas there is less clear separation between the sepal lengths and widths.
+
+*Plot 12 - Pairplot*
+
+![alt text](<Pairplot of Iris Dataset.png>)
+
+The pairplot could be used to demonstrate **Bivariate** or **Multivariate** analysis. It is a matrix of scatter plots. It shows all the variables plotted against each other. The diagonal plots are the univariate plots. It is useful for a quick analysis of the data. Clearly on this pairplot , we can see that the setosa iris is separate and more clearly identifiable from the other two species. There is a high correlation between the petal length and width columns visible here. 
 
 
 
+*Plot 13 - Andrew's Curves*
 
+![alt text](<Iris DataSet Andrews Curves.png>)
+
+Andrew's Curves  are a way of visualising structures in high-dimensional data. It uses a function to generate curves for visualising clusters or separations. We can interpret the curves by examining the similarities or differences among the shape of the curves. Setosa is distinct from the other two species, there is more of an overlap between virgincia and versicolor.
 
 
 
@@ -144,7 +193,7 @@ The histogram of the petal width shows that setosa is the shortest in cm under 0
 * [Geeksfor Geeks Histograms](https://www.geeksforgeeks.org/interpretations-of-histogram/) - Interpretations of Histograms.  
 * [W3 Schools matplotlib](https://www.w3schools.com/python/matplotlib_pyplot.asp) - how to plot using matplotlib.  
 * [W3Schools histograms](https://www.w3schools.com/python/matplotlib_histograms.asp) - how to plot histograms.  
-* [Wikipedia Correlation Coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) describes the linear relationship between x and y. It ranges from −1 to 1. If the value is close to +1 it implies that  if the data points are on a line as the x increases, the y also increases. If the value is close to – 1 , it implies a line where y increases while x decreases.  
+* [Wikipedia Correlation Coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) describes the linear relationship between x and y. 
 * [Real Python](https://realpython.com/visualizing-python-plt-scatter/)- This articles shows you how to do a scatterplot and how to change shapes and colours.  
 * [Facet Grids](https://www.geeksforgeeks.org/python-seaborn-facetgrid-method/) - I seen the idea for the facet grids in some of the research documents , particularly the Rpubs project above and I researched how to do it using geeksforgeeks.  
 * [Box plots](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/) -graphical representation of the distribution of a dataset.  

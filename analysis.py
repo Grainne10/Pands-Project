@@ -152,11 +152,11 @@ from plots import heatmap
  
 from plots import violin
 
-# Andrews Curves can be used as a way to visualise multivariate data. It maps all features from a row of data onto a function resulting in a unique curve. It highlights potential clusters or separations from them.
+# Andrews Curves can be used as a way to visualise multivariate data. It maps all features from a row of data onto a function resulting in a unique curve. 
+# It highlights potential clusters or separations from them.
 # This is an Andrew's curves plot :
 
 from plots import andrewscurves
-
 
 
 # To save a table into a png file so it can be copied into the Readme file.
