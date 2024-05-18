@@ -52,7 +52,7 @@ def facetgrid2(df):
     g.set_titles("{col_name}")
     plt.subplots_adjust(top=0.85) 
     plt.suptitle("Iris Dataset Facet Grid Petal Length  vs. Petal Width ", fontsize=18)
-    plt.savefig('Facet Grid Scatter plot of Petal Length vs Petal Width', bbox_inches='tight')
+    plt.savefig('Facet Grid  of Petal Length vs Petal Width', bbox_inches='tight')
     plt.show()
 
 facetgrid2(df)  
@@ -105,7 +105,7 @@ histogram3(df)
 
 def histogram4(df):
     plt.figure(figsize=(6, 6))
-    sns.histplot(df, x='petal_length', hue="species", edgecolor = "white", multiple="layer", kde=True, bins=18, alpha=0.3)
+    sns.histplot(df, x='petal_width', hue="species", edgecolor = "white", multiple="layer", kde=True, bins=18, alpha=0.3)
     plt.title('Iris Dataset Histogram Petal Width')
     plt.legend
     plt.xlabel('Petal Width')

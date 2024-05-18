@@ -60,11 +60,12 @@ It generates a number of tables and graphs that I use to analyse the data set.
 * Saves a table of the describe for import to this Readme.  
 * Saves a table of the missing values for import to this Readme.  
 
-## Discussion
 
-The script is run on Python. It is uploaded from a CSV file. First the data is checked for completeness and suitable for analysing.
+
 
 ### Preprocessing 
+
+The script is run on Python. It is uploaded from a CSV file. First the data is checked for completeness and suitable for analysing.
 
 We first look at the data types, it shows that the counts of the different species are numerical and species are treated as objects. A count of the values shows that there are 50 of each species.
 
@@ -75,6 +76,45 @@ This table describes the data, it shows that there are 150 samples counted, it s
 The data was tested for missing values and this table shows there are no missing values, it is a clean set suitable for analysis.  
 
 ![alt text](<Missing values Table.png>)
+
+### Discussion
+
+*Plot 1 - Box plot*
+
+![alt text](<Box Plot of Iris Dataset.png>)
+
+Box plots show the median, quartile and potential outliers. The plot shows that the distribution varies more significantly on the petal length and petal width. Sepal length and sepal width are shorter in their variation but the sepal length is the longest in length of the four variables. There are outliers mainly on the sepal width.
+
+The histograms are examples of an univariate analysis where we look at the each one of the variables individually.
+
+*Plot 2 - Histogram Sepal Length*
+
+![alt text](<Histogram Sepal Length.png>)
+
+The histogram of the sepal length shows there is an overlap on all the species with setosa having the shorter length and virginica having the longer length.
+
+*Plot 3 - Histogram Sepal Width*
+
+![alt text](<Histogram Sepal Width.png>)
+
+The histogram of the sepal width shows an overlap on all the species with setosa having the longer length up to 4.4cm, versicolor mainly the shortest between 2.0cm and 3.5cm and virignica somewhere in between.
+
+*Plot 4 - Histogram Petal Length*
+
+![alt text](<Histogram Petal Length.png>)
+
+The histogram of the petal length shows less of an overlap between the species. The setosa petals are the shortest between 1cm and 2cm, versicolor range between 3cm and 5.3cm and virginica are the longest between 4.3cm and 7cm. So, it is easier to identify and separate the three species by using petal length.
+
+
+*Plot 5 - Histogram Petal Width*
+
+![alt text](<Histogram Petal Width.png>)
+
+The histogram of the petal width shows that setosa is the shortest in cm under 0.5cm, versicolor lies between 1cm and 1.8cm and virginica is between approximately 1.4cm and 2.5cm. Again is it easier to identify the three species by petal length and  petal width rather than the sepal length and sepal width where is is more of an overlap between the three species.
+
+
+
+
 
 
 
