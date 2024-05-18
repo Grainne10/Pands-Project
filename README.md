@@ -2,19 +2,25 @@
 
 **by Grainne Boyle**
 
-I work a [TE Connectivity] .
+I work at [TE Connectivity] .
 I am a student at the [Atlantic Technological University](https://www.atu.ie/), Galway, studying the Higher Diploma in Science in Data Analytics on a part-time basis over 2 years.  
 This repository contains the files for the project for the Programme and Scripting module in the Higher Diploma in Science in Data Analytics.
 
+## Contents
+
+1. [Description](#Description)
+2. [Background](#Background)
+3. [Analysis](#Analysis.py Script)
+4. [Preprocessing](#Preprocessing)
+5. [Discussion](#Discussion)
+6. [Conclusion](#Conclusion)
+7. [References](#Refences)
+8. [Libraries](#Libraries)
+9. [Requirements](#Requirements)
+
+
 ## Description  
 This project is based on the [Iris Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set). For the project I must research the data set and write documentation and code in Python to investigate the data set, with a view to explaining it to my colleagues.I may be asked to give a presentation on the data , where I explain what investigating a data set entails and how Python can be used to do it. 
-
-
-
-
-
-
-
 
 
 ## Background  
@@ -34,15 +40,15 @@ Virginica has 3 drooping sepals, called "falls",  and 3 upright petals, called "
 Versicolor has 6 petals and bluntly sepals spread out nearly flat.   
  
 
-
-## analysis.py  
-The script is run from the command line by entering python analysis.py  
-Python language is a simple high-level and an open-source language used for general-purpose programming.
-It imports a number of libraries to enable analysis of the dataset. 
+## Analysis.py Script 
+Python language used in this script is a simple high-level and an open-source language used for general-purpose programming.  
+The script is run from the command line by entering python analysis.py   
+It imports a number of libraries to enable analysis of the dataset.  
 It runs a number of commands and codes.  
-It saves a summary of the variables to the same folder as the script.
-It generates a number of tables and graphs that I use to analyse the data set.
-## Python Script  
+It saves a summary of the variables to the same folder as the script.  
+It generates a number of tables and graphs that I use to analyse the data set.  
+
+## Python Script Detail
 * Read in the Iris Data CSV from a URL.  
 * Imports libraries needed to run script.  
 * Preprocesses the data to ensure it is suitable for analysis by describing the data, checking data types and checking for null values.  
@@ -61,13 +67,11 @@ It generates a number of tables and graphs that I use to analyse the data set.
 * Saves a table of the missing values for import to this Readme.  
 
 
+## Preprocessing 
 
+The script is run on Python. It is uploaded from a CSV file. First the data is checked for completeness and suitability for analysing.  
 
-### Preprocessing 
-
-The script is run on Python. It is uploaded from a CSV file. First the data is checked for completeness and suitable for analysing.
-
-We first look at the data types, it shows that the counts of the different species are numerical and species are treated as objects. A count of the values shows that there are 50 of each species.
+We first look at the data types, it shows that the counts of the different species are numerical and species are treated as objects. A count of the values shows that there are  50 of each species.  
 
 This table describes the data, it shows that there are 150 samples counted, it shows the average, minimum , maximum in all the categories.
 
@@ -77,7 +81,8 @@ The data was tested for missing values and this table shows there are no missing
 
 ![alt text](<Missing values Table.png>)
 
-### Discussion
+
+## Discussion
 
 *Plot 1 - Box plot*
 
@@ -87,17 +92,20 @@ Box plots show the median, quartile and potential outliers. The plot shows that 
 
 The histograms are examples of an **univariate analysis** where we look at the each one of the variables individually.
 
+
 *Plot 2 - Histogram Sepal Length*
 
 ![alt text](<Histogram Sepal Length.png>)
 
 The histogram of the sepal length shows there is an overlap on all the species with setosa having the shorter length and virginica having the longer length.
 
+
 *Plot 3 - Histogram Sepal Width*
 
 ![alt text](<Histogram Sepal Width.png>)
 
 The histogram of the sepal width shows an overlap on all the species with setosa having the longer length up to 4.4cm, versicolor mainly the shortest between 2.0cm and 3.5cm and virignica somewhere in between.
+
 
 *Plot 4 - Histogram Petal Length*
 
@@ -114,11 +122,13 @@ The histogram of the petal width shows that setosa is the shortest in cm under 0
 
 Next we will look at some **Bivariate Analysis** where two variables are compared.
 
+
 *Plot 6 - Scatterplot of Sepal length vs Sepal Width*
 
 ![alt text](<Scatter plot of Sepal Length vs Sepal Width .png>)
 
 Each point on the scatterplot refers to one on the 150 iris flowers , with colour and shape indicating their species type. The setosa has the shortest sepal length and the longest sepal width. Virginica has larger sepal length but smaller sepal width. Versicolor lies in the middle of the two with more overlap with versicolor.
+
 
 *Plot 7 - Scatterplot of Petal length vs Petal Width*
 
@@ -126,17 +136,20 @@ Each point on the scatterplot refers to one on the 150 iris flowers , with colou
 
  Setosa stands out on it's own again in this plot. It has shorter petal lengths and widths. There is less of an overlap between the other two species on the petal length. Virginica has the the largest petal lengths and widths. Versicolor lies in the middle of the two other species.
 
+
 *Plot 8 - Facet grid of Sepal length vs Sepal Width*
 
 ![alt text](<Facet Grid of Sepal Length vs Sepal Width.png>)
 
 The facet grids show individual scatterplots of the three species. I have added a line of best fit and you can see there is a linear regression, generally as the sepal length increases the sepal width also increases.
 
+
 *Plot 9 - Facet grid  of Petal length vs Petal Width*
 
 ![alt text](<Facet Grid Scatter plot of Petal Length vs Petal Width.png>)
 
 This shows clearly the differences and you can easily identify the species by their different petal lengths and widths.
+
 
 *Plot 10 - HeatMap*
 
@@ -151,6 +164,7 @@ The heatmap shows the correlation between the variables, It ranges from −1 to 
 
 Violin plot is a hybrid of the box plot and kernal density plot. The plot displays a clear separation for petal lengths and widths of the three species, particularly for the Iris Setosa. Whereas there is less clear separation between the sepal lengths and widths.
 
+
 *Plot 12 - Pairplot*
 
 ![alt text](<Pairplot of Iris Dataset.png>)
@@ -158,18 +172,24 @@ Violin plot is a hybrid of the box plot and kernal density plot. The plot displa
 The pairplot could be used to demonstrate **Bivariate** or **Multivariate** analysis. It is a matrix of scatter plots. It shows all the variables plotted against each other. The diagonal plots are the univariate plots. It is useful for a quick analysis of the data. Clearly on this pairplot , we can see that the setosa iris is separate and more clearly identifiable from the other two species. There is a high correlation between the petal length and width columns visible here. 
 
 
-
 *Plot 13 - Andrew's Curves*
 
 ![alt text](<Iris DataSet Andrews Curves.png>)
 
-Andrew's Curves  are a way of visualising structures in high-dimensional data. It uses a function to generate curves for visualising clusters or separations. We can interpret the curves by examining the similarities or differences among the shape of the curves. Setosa is distinct from the other two species, there is more of an overlap between virgincia and versicolor.
-
-
-
+Andrew's Curves demonstrate a **Multivariate** visualisation. It uses a function to generate curves for visualising clusters or separations. We can interpret the curves by examining the similarities or differences among the shape of the curves. Setosa is distinct from the other two species, there is more of an overlap between virgincia and versicolor. This is similar to what we observed in our other visualisations.
 
 
 ## Conclusion  
+ 
+ * It is a complete dataset.
+ * It is much used, due to the few variables making for clear visualisation and proposed by the prominent statician Sir Ronald Fisher
+ * Setosa is more distinguishable from the other two species. Setosa has higher sepal width but lower sepal length, petal width and petal length.
+ * Virginica has lower sepal width, but higher sepal length, petal width and petal lenghth.
+ * Vertosa lies mainly in between the other species in terms of sepal and petal widths and lengths with more of an overlap to the virginica species.
+ * All species show linear regression between sepal length and sepal width, and petal length and petal width.
+ * All variables show positive correlation to each other apart from sepal width which shows a negative correlation. 
+
+
 
 ## References  
 
@@ -188,6 +208,7 @@ Andrew's Curves  are a way of visualising structures in high-dimensional data. I
 * [Colour Selection](https://matplotlib.org/mpl_examples/color/named_colors.hires.png).  
 * [Colour Heatmap](https://python-graph-gallery.com/92-control-color-in-seaborn-heatmaps/) - selecting colours for the heatmap. 
 * [Cloudinary](https://cloudinary.com/guides/web-performance/4-ways-to-add-images-to-github-readme-1-bonus-method#:~:text=The%20easiest%20way%20to%20add,you%20want%20it%20to%20appear.) - Adding images to readme file
+* [Medium](https://zion-oladiran.medium.com/exploratory-data-analysis-iris-dataset-68897497b120) - Comparisons to other Iris datasets
 
 ### Code Sources 
 * [Geeksfor Geeks Histograms](https://www.geeksforgeeks.org/interpretations-of-histogram/) - Interpretations of Histograms.  
@@ -213,7 +234,6 @@ Andrew's Curves  are a way of visualising structures in high-dimensional data. I
 * ChatGPT - This was used to tidy up and make some improvements on a few of the graphs.
 
 
-
 ## Libraries Used  
 
 * Pandas - for the DataFrame data structure. It allows us to investigate CSV files . It is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.  
@@ -223,5 +243,11 @@ Andrew's Curves  are a way of visualising structures in high-dimensional data. I
 * Seaborn library - used for visualizing the explorative statistical plots of data.  
 * Warnings - we tell Panda to ignore future warning message generated by Pandas.  
 
+## Requirements
+
+python 3.11.5
+matplotlib 3.7.2
+numpy 1.24.3
+seaborn 0.12.2
 
 
