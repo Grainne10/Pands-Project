@@ -396,4 +396,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-analysis.ipynb  # used for testing code
+
+# Used for testing code
+
+analysis.ipynb  

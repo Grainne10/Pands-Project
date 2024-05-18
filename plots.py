@@ -52,7 +52,7 @@ def facetgrid2(df):
     g.set_titles("{col_name}")
     plt.subplots_adjust(top=0.85) 
     plt.suptitle("Iris Dataset Facet Grid Petal Length  vs. Petal Width ", fontsize=18)
-    plt.savefig('Facet Grid  of Petal Length vs Petal Width', bbox_inches='tight')
+    plt.savefig('Facet Grid of Petal Length vs Petal Width', bbox_inches='tight')
     plt.show()
 
 facetgrid2(df)  

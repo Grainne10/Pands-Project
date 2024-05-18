@@ -10,7 +10,7 @@ This repository contains the files for the project for the Programme and Scripti
 
 1. [Description](#Description)
 2. [Background](#Background)
-3. [Analysis](#Analysis.py Script)
+3. [Script](#Script)
 4. [Preprocessing](#Preprocessing)
 5. [Discussion](#Discussion)
 6. [Conclusion](#Conclusion)
@@ -40,7 +40,7 @@ Virginica has 3 drooping sepals, called "falls",  and 3 upright petals, called "
 Versicolor has 6 petals and bluntly sepals spread out nearly flat.   
  
 
-## Analysis.py Script 
+## Script 
 Python language used in this script is a simple high-level and an open-source language used for general-purpose programming.  
 The script is run from the command line by entering python analysis.py   
 It imports a number of libraries to enable analysis of the dataset.  
@@ -48,7 +48,7 @@ It runs a number of commands and codes.
 It saves a summary of the variables to the same folder as the script.  
 It generates a number of tables and graphs that I use to analyse the data set.  
 
-## Python Script Detail
+## Analysis.py Script Detail
 * Read in the Iris Data CSV from a URL.  
 * Imports libraries needed to run script.  
 * Preprocesses the data to ensure it is suitable for analysis by describing the data, checking data types and checking for null values.  
@@ -185,7 +185,7 @@ Andrew's Curves demonstrate a **Multivariate** visualisation. It uses a function
  * It is much used, due to the few variables making for clear visualisation and proposed by the prominent statician Sir Ronald Fisher
  * Setosa is more distinguishable from the other two species. Setosa has higher sepal width but lower sepal length, petal width and petal length.
  * Virginica has lower sepal width, but higher sepal length, petal width and petal lenghth.
- * Vertosa lies mainly in between the other species in terms of sepal and petal widths and lengths with more of an overlap to the virginica species.
+ * Versicolor lies mainly in between the other species in terms of sepal and petal widths and lengths with more of an overlap to the virginica species.
  * All species show linear regression between sepal length and sepal width, and petal length and petal width.
  * All variables show positive correlation to each other apart from sepal width which shows a negative correlation. 
 
@@ -223,7 +223,7 @@ Andrew's Curves demonstrate a **Multivariate** visualisation. It uses a function
 * [Disable warnings](https://www.geeksforgeeks.org/how-to-disable-python-warnings/) - This shows how to stop showing warnings that appear for plots etc.  
 * [Seaborn](https://seaborn.pydata.org/generated/seaborn.pairplot.html) - This shows pairplots using all the numerical variables.  
 * [Seaborn](https://seaborn.pydata.org/generated/seaborn.kdeplot.html) - Explanation and examples of different kernal density plots.  
-*  [Violin Plots](https://www.geeksforgeeks.org/violin-plot-for-data-analysis/) - Has been described as a hybrid of a box plot and kernal density plot. It can depict summary statistic and density of each variable.  
+* [Violin Plots](https://www.geeksforgeeks.org/violin-plot-for-data-analysis/) - Has been described as a hybrid of a box plot and kernal density plot. It can depict summary statistic and density of each variable.  
 * [Multiplots](https://www.geeksforgeeks.org/multi-plot-grid-in-seaborn/) - how to do a multiplot for the violinplot.  
 * [Real Python](What Does if __name__ == "__main__" Do in Python? – Real Python) - execute code when  file is run from a script, but not when imported as a module.  
 * [Pandas Plot multivariate](https://pandas.pydata.org/docs/user_guide/visualization.html#andrews-curves) - example of multivariate plot.  
@@ -234,7 +234,7 @@ Andrew's Curves demonstrate a **Multivariate** visualisation. It uses a function
 * ChatGPT - This was used to tidy up and make some improvements on a few of the graphs.
 
 
-## Libraries Used  
+## Libraries  
 
 * Pandas - for the DataFrame data structure. It allows us to investigate CSV files . It is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.  
 * CSV - (Comma Separated Values) is a simple file format used to store tabular data.  
