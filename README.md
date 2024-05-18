@@ -69,11 +69,13 @@ The script is run on Python. It is uploaded from a CSV file. First the data is c
 We first look at the data types, it shows that the counts of the different species are numerical and species are treated as objects. A count of the values shows that there are 50 of each species.
 
 This table describes the data, it shows that there are 150 samples counted, it shows the average, minimum , maximum in all the categories.
-![alt text](image.png)
+
+![alt text](describetable.png)
 
 The data was tested for missing values and this table shows there are no missing values, it is a clean set suitable for analysis.  
 
-![alt text](image-1.png)
+![alt text](<Missing values Table.png>)
+
 
 
 
@@ -96,6 +98,7 @@ The data was tested for missing values and this table shows there are no missing
 * [Medium](https://medium.com/geekculture/8-best-seaborn-visualizations-20143a4b3b2f) - different visualisations you can use.  
 * [Colour Selection](https://matplotlib.org/mpl_examples/color/named_colors.hires.png).  
 * [Colour Heatmap](https://python-graph-gallery.com/92-control-color-in-seaborn-heatmaps/) - selecting colours for the heatmap. 
+* [Cloudinary](https://cloudinary.com/guides/web-performance/4-ways-to-add-images-to-github-readme-1-bonus-method#:~:text=The%20easiest%20way%20to%20add,you%20want%20it%20to%20appear.) - Adding images to readme file
 
 ### Code Sources 
 * [Geeksfor Geeks Histograms](https://www.geeksforgeeks.org/interpretations-of-histogram/) - Interpretations of Histograms.  
