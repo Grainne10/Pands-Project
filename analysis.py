@@ -185,7 +185,7 @@ null_counts = {'sepal_length': 0, 'sepal_width': 0, 'petal_length': 0, 'petal_wi
 df_null_counts = pd.DataFrame(null_counts.items(), columns=['Column', 'Missing Values'])
 
 # Plotting the table and saving it as an image file
-plt.figure(figsize=(4, 3))  # Adjust the figure size as needed
+plt.figure(figsize=(7, 2))  # Adjust the figure size as needed
 ax = plt.subplot(111, frame_on=False)
 ax.xaxis.set_visible(False)
 ax.yaxis.set_visible(False)

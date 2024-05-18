@@ -37,6 +37,7 @@ Versicolor has 6 petals and bluntly sepals spread out nearly flat.
 
 ## analysis.py  
 The script is run from the command line by entering python analysis.py  
+Python language is a simple high-level and an open-source language used for general-purpose programming.
 It imports a number of libraries to enable analysis of the dataset. 
 It runs a number of commands and codes.  
 It saves a summary of the variables to the same folder as the script.
@@ -49,15 +50,33 @@ It generates a number of tables and graphs that I use to analyse the data set.
 * Reads in modules from a file within the repository "plots.py", these modules are functions to create the graphs and visualisations.  
 * Creates scatterplots of the data and outputs to a png file within the repository.  
 * Creates pairplots of the data and outputs to a png file within the repository.  
-* Creates facet grids of the dataset
-* Creates box plot of the dataset
-* Creates individual histograms for each variable
-* Calculates the correlation matrix 
-* Creates a heatmap from the correlation data
-* Creates violin plots
-* Creates Andrew's curve plot.
-* Saves a table of the describe for import to this Readme
-* Saves a table of the missing values for import to this Readme
+* Creates facet grids of the dataset.  
+* Creates box plot of the dataset.  
+* Creates individual histograms for each variable.  
+* Calculates the correlation matrix.   
+* Creates a heatmap from the correlation data.  
+* Creates violin plots.  
+* Creates Andrew's curve plot.  
+* Saves a table of the describe for import to this Readme.  
+* Saves a table of the missing values for import to this Readme.  
+
+## Discussion
+
+The script is run on Python. It is uploaded from a CSV file. First the data is checked for completeness and suitable for analysing.
+
+### Preprocessing 
+
+We first look at the data types, it shows that the counts of the different species are numerical and species are treated as objects. A count of the values shows that there are 50 of each species.
+
+This table describes the data, it shows that there are 150 samples counted, it shows the average, minimum , maximum in all the categories.
+![alt text](image.png)
+
+The data was tested for missing values and this table shows there are no missing values, it is a clean set suitable for analysis.  
+
+![alt text](image-1.png)
+
+
+
 
 ## Conclusion  
 
@@ -70,6 +89,7 @@ It generates a number of tables and graphs that I use to analyse the data set.
 * [Using Numpy](https://numpy.org/doc/stable/user/absolute_beginners.html) - facilitate advanced mathematical and other types of operations on large numbers of data.  
 * [Expoloring the dataset](https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/)- shows how to describe the data and uses visualisation through plots and ,graphs.  
 * [Exploratory Analysis](https://medium.com/@nirajan.acharya666/exploratory-data-analysis-of-iris-dataset-9c0df76771df) - Analysis of the Iris dataset.
+* [Geeks for Geeks](https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/)- Start off code for Iris dataset and Panda Basic.  
 * [Multivariate Statistics](https://en.wikipedia.org/wiki/Multivariate_statistics) - observations of more than one variable  
 * [Univariate and Bivariate Analysis](https://www.geeksforgeeks.org/univariate-bivariate-and-multivariate-data-and-its-analysis/) - univariate looks at one variable and bivariate looks at two variables and how thy may be related.  
 * [Bivariate Analysis](https://www.questionpro.com/blog/bivariate-analysis/) - looks at the visual methods on how we can measure if two variables are related.  
