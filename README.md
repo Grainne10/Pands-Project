@@ -4,7 +4,8 @@
 
 I work at [TE Connectivity] .
 I am a student at the [Atlantic Technological University](https://www.atu.ie/), Galway, studying the Higher Diploma in Science in Data Analytics on a part-time basis over 2 years.  
-This repository contains the files for the project for the Programme and Scripting module in the Higher Diploma in Science in Data Analytics.
+This repository contains the files for the project for the Programme and Scripting module in the Higher Diploma in Science in Data Analytics. 
+
 
 ## Contents
 
@@ -14,7 +15,7 @@ This repository contains the files for the project for the Programme and Scripti
 4. [Preprocessing](#Preprocessing)
 5. [Discussion](#Discussion)
 6. [Conclusion](#Conclusion)
-7. [References](#Refences)
+7. [References](#References)
 8. [Libraries](#Libraries)
 9. [Requirements](#Requirements)
 
@@ -90,7 +91,7 @@ The data was tested for missing values and this table shows there are no missing
 
 Box plots show the median, quartile and potential outliers. The plot shows that the distribution varies more significantly on the petal length and petal width. Sepal length and sepal width are shorter in their variation but the sepal length is the longest in length of the four variables. There are outliers mainly on the sepal width.
 
-The histograms are examples of an **univariate analysis** where we look at the each one of the variables individually.
+The histograms are examples of an **univariate analysis** where we look at the each one of the variables individually. This histograms below also show a kernal density curve, it can be useful for showing underlying patterns and probability distribution estimation.
 
 
 *Plot 2 - Histogram Sepal Length*
@@ -104,7 +105,7 @@ The histogram of the sepal length shows there is an overlap on all the species w
 
 ![alt text](<Histogram Sepal Width.png>)
 
-The histogram of the sepal width shows an overlap on all the species with setosa having the longer length up to 4.4cm, versicolor mainly the shortest between 2.0cm and 3.5cm and virignica somewhere in between.
+The histogram of the sepal width shows an overlap on all the species with setosa having the longer length up to 4.4cm, versicolor mainly the shortest between 2.0cm and 3.5cm and virginica somewhere in between.
 
 
 *Plot 4 - Histogram Petal Length*
@@ -118,7 +119,7 @@ The histogram of the petal length shows less of an overlap between the species. 
 
 ![alt text](<Histogram Petal Width.png>)
 
-The histogram of the petal width shows that setosa is the shortest in cm under 0.5cm, versicolor lies between 1cm and 1.8cm and virginica is between approximately 1.4cm and 2.5cm. Again is it easier to identify the three species by petal length and  petal width rather than the sepal length and sepal width where is is more of an overlap between the three species. 
+The histogram of the petal width shows that setosa is the shortest in cm under 0.6cm, versicolor lies between 1cm and 1.8cm and virginica is between approximately 1.4cm and 2.5 cm. Again is it easier to identify the three species by petal length and  petal width rather than the sepal length and sepal width where there is more of an overlap between the three species. 
 
 Next we will look at some **Bivariate Analysis** where two variables are compared.
 
@@ -127,26 +128,26 @@ Next we will look at some **Bivariate Analysis** where two variables are compare
 
 ![alt text](<Scatter plot of Sepal Length vs Sepal Width .png>)
 
-Each point on the scatterplot refers to one on the 150 iris flowers , with colour and shape indicating their species type. The setosa has the shortest sepal length and the longest sepal width. Virginica has larger sepal length but smaller sepal width. Versicolor lies in the middle of the two with more overlap with versicolor.
+Each point on the scatterplot refers to one on the 150 iris flowers , with colour and shape indicating their species type. The setosa has the shortest sepal length and the longest sepal width. Virginica has larger sepal length but smaller sepal width. Versicolor lies in the middle of the two with more overlap with virginica.
 
 
 *Plot 7 - Scatterplot of Petal length vs Petal Width*
 
 ![alt text](<Scatter plot of Petal Length vs Petal Width .png>)
 
- Setosa stands out on it's own again in this plot. It has shorter petal lengths and widths. There is less of an overlap between the other two species on the petal length. Virginica has the the largest petal lengths and widths. Versicolor lies in the middle of the two other species.
+ Setosa stands out on it's own again in this plot. It has shorter petal lengths and widths. There is less of an overlap between the other two species on the petal length. Virginica has the the largest petal lengths and widths. Versicolor lies in the middle of the other two species.
 
 
 *Plot 8 - Facet grid of Sepal length vs Sepal Width*
 
 ![alt text](<Facet Grid of Sepal Length vs Sepal Width.png>)
 
-The facet grids show individual scatterplots of the three species. I have added a line of best fit and you can see there is a linear regression, generally as the sepal length increases the sepal width also increases.
+The facet grids show individual scatterplots of the three species. I have added a line of best fit and you can see there is a linear regression, generally as the sepal length increases the sepal width also increases. We can surmise that it is easier to predict the increase in one variable when the other increases.
 
 
-*Plot 9 - Facet grid  of Petal length vs Petal Width*
+*Plot 9 - Facet grid of Petal length vs Petal Width*
 
-![alt text](<Facet Grid Scatter plot of Petal Length vs Petal Width.png>)
+![alt text](<Facet Grid of Petal Length vs Petal Width.png>)
 
 This shows clearly the differences and you can easily identify the species by their different petal lengths and widths.
 
@@ -162,7 +163,7 @@ The heatmap shows the correlation between the variables, It ranges from −1 to 
 
 ![alt text](<Iris DataSet Violin Plots.png>)
 
-Violin plot is a hybrid of the box plot and kernal density plot. The plot displays a clear separation for petal lengths and widths of the three species, particularly for the Iris Setosa. Whereas there is less clear separation between the sepal lengths and widths.
+Violin plot is a hybrid of the box plot and kernal density plot. The plot displays a clear separation for petal lengths and widths of the three species, particularly for the Iris Setosa. Whereas there is less clear of a separation between the sepal lengths and widths.
 
 
 *Plot 12 - Pairplot*
@@ -181,13 +182,15 @@ Andrew's Curves demonstrate a **Multivariate** visualisation. It uses a function
 
 ## Conclusion  
  
- * It is a complete dataset.
- * It is much used, due to the few variables making for clear visualisation and proposed by the prominent statician Sir Ronald Fisher
+ * It is a complete dataset.  
+ * It is much used, due to the few variables making for clear visualisation and it is proposed by the prominent statician Sir Ronald Fisher.  
  * Setosa is more distinguishable from the other two species. Setosa has higher sepal width but lower sepal length, petal width and petal length.
  * Virginica has lower sepal width, but higher sepal length, petal width and petal lenghth.
  * Versicolor lies mainly in between the other species in terms of sepal and petal widths and lengths with more of an overlap to the virginica species.
  * All species show linear regression between sepal length and sepal width, and petal length and petal width.
  * All variables show positive correlation to each other apart from sepal width which shows a negative correlation. 
+
+
 
 
 
